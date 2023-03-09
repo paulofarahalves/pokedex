@@ -9,13 +9,14 @@ export const Pages = styled.div`
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
+			padding: 0;
 
 			li {
 				button {
 					border-radius: 50%;
 					width: 40px;
 					height: 40px;
-					margin: 0 5px;
+					margin: 5px 5px;
 					color: #395faa;
 					font-weight: bold;
 					font-size: 15px;
