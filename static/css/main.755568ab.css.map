@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.755568ab.css","mappings":"gGAEA,EACC,8BACD,CAEA,KACC,wBACD","sources":["App.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');\r\n\r\n* {\r\n\tfont-family: 'Poppins', sans-serif;\r\n}\r\n\r\nbody {\r\n\tbackground-color: #cff0e5;\r\n}\r\n"],"names":[],"sourceRoot":""}
