@@ -79,4 +79,37 @@ export const PageArea = styled.div`
 			gap: 30px;
 		}
 	}
+
+	@media (max-width: 1070px) {
+		.pokedex {
+			.pokemonList {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+	}
+	@media (max-width: 800px) {
+		.pokedex {
+			.pokemonList {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+	@media (max-width: 550px) {
+		.pokedex {
+			.pokemonList {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
+	}
+	@media (max-width: 470px) {
+		.pokedex {
+			.logo {
+				width: 300px;
+			}
+
+			input {
+				width: 300px;
+			}
+		}
+	}
 `;

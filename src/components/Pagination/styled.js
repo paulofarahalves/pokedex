@@ -6,6 +6,7 @@ export const Pages = styled.div`
 			list-style-type: none;
 			display: flex;
 			flex-direction: row;
+			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
 
