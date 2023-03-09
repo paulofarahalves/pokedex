@@ -1,13 +1,32 @@
 import styled from 'styled-components';
+import backgroundImg from '../../assets/images/background.png';
 
 export const PageArea = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 30px;
+	padding-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.1;
+		background-image: url(${backgroundImg});
+		background-repeat: repeat;
+		background-position: 50% 0;
+		background-size: auto;
+	}
 
 	.pokedex {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -27,13 +46,14 @@ export const PageArea = styled.div`
 
 		.generations {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
 
 			.generation {
 				border-radius: 50%;
-				width: 40px;
-				height: 40px;
+				width: 50px;
+				height: 50px;
 				margin: 0 5px;
 				color: #395faa;
 				font-weight: bold;
@@ -68,7 +88,7 @@ export const PageArea = styled.div`
 			height: 60px;
 			font-size: 20px;
 			border-radius: 30px;
-			background-color: #cff0e5;
+			background-color: #feffee;
 			border: 3px solid #395faa;
 			outline: none;
 		}
@@ -81,6 +101,9 @@ export const PageArea = styled.div`
 	}
 
 	@media (max-width: 1070px) {
+		.background {
+			object-fit: none;
+		}
 		.pokedex {
 			.pokemonList {
 				grid-template-columns: repeat(3, 1fr);

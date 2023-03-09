@@ -105,6 +105,8 @@ export default function Pokemon(props) {
 		backgroundColor: `${typeBackgroundColor}`,
 	};
 
+	//https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${pokemonInfo.id}.png
+
 	return (
 		<PokemonItem>
 			<div className="pokemon" style={divStyle}>
@@ -114,7 +116,7 @@ export default function Pokemon(props) {
 					<>
 						<img src={pokeball} className="pokeball" alt="" />
 						<img
-							src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemonInfo.id}.svg`}
+							src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonInfo.id}.png`}
 							alt=""
 							className="pokemonImage"
 						/>

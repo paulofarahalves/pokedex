@@ -42,6 +42,7 @@ function Page() {
 		setGenerationInfo(gen);
 		setCurrentPage(1);
 		setSearchInput('');
+		console.log(pokemonList);
 	};
 
 	return (

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Pages = styled.div`
+	position: relative;
 	nav {
 		ul {
 			list-style-type: none;
