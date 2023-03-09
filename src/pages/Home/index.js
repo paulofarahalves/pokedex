@@ -41,6 +41,7 @@ function Page() {
 		setCurrentGeneration(gen.id);
 		setGenerationInfo(gen);
 		setCurrentPage(1);
+		setSearchInput('');
 	};
 
 	return (
@@ -53,6 +54,7 @@ function Page() {
 						alt=""
 						onClick={() => {
 							selectGeneration(generations[0]);
+							setPokemonFilter(pokemonList);
 						}}
 					/>
 					<h3>Select generation:</h3>
