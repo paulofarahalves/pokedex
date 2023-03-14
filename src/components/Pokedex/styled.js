@@ -125,6 +125,7 @@ export const PokedexArea = styled.div`
 			top: 59.5%;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
+			column-gap: 4px;
 			font-size: 13px;
 			text-align: center;
 
@@ -232,6 +233,7 @@ export const PokedexArea = styled.div`
 				left: 31.9%;
 				top: 59.5%;
 				font-size: 6px;
+				column-gap: 2px;
 
 				div {
 					border-bottom: 1px dashed #000;
