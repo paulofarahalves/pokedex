@@ -159,12 +159,12 @@ export const PokedexArea = styled.div`
 			}
 
 			.next {
-				top: 70.6%;
+				top: 73.2%;
 				left: 24.5%;
 			}
 
 			.prev {
-				top: 71%;
+				top: 73.5%;
 				left: 15%;
 			}
 
