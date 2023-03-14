@@ -101,12 +101,12 @@ const Pokedex = ({
 									<div className="pokemonName">
 										{currentPokemonInfo.name}
 									</div>
-									{currentPokemonInfo.stats.map((i) => (
+									{/*currentPokemonInfo.stats.map((i) => (
 										<>
 											<div>{i.stat.name}</div>
 											<div>{i.base_stat}</div>
 										</>
-									))}
+									))*/}
 								</div>
 							</>
 						)}
