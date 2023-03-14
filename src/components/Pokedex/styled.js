@@ -185,9 +185,6 @@ export const PokedexArea = styled.div`
 				left: 31.9%;
 				top: 59.5%;
 				font-size: 10px;
-
-				div {
-				}
 			}
 		}
 	}
@@ -237,7 +234,53 @@ export const PokedexArea = styled.div`
 				font-size: 6px;
 
 				div {
+					border-bottom: 1px dashed #000;
 				}
+			}
+		}
+	}
+
+	@media (max-width: 375px) {
+		#modal {
+			width: 373px;
+			height: 275px;
+
+			.next,
+			.prev,
+			.up,
+			.down {
+				font-size: 9px;
+			}
+
+			.next {
+				top: 73%;
+				left: 24.5%;
+			}
+
+			.prev {
+				top: 73.8%;
+				left: 15%;
+			}
+
+			.pokemonArea {
+				top: 7.2%;
+				width: 130px;
+				height: 95.8px;
+
+				.pokemonImg {
+					width: 50px;
+					height: 50px;
+					left: 43%;
+					top: 18%;
+				}
+			}
+
+			.pokemonInfo {
+				width: 129px;
+				height: 95.8px;
+				padding: 5px;
+				left: 31.9%;
+				top: 59.5%;
 			}
 		}
 	}
