@@ -42,8 +42,6 @@ const Pokedex = ({
 		imgSrc = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${currentPokemonInfo.id}.png`;
 	}
 
-	console.log(currentPokemonInfo);
-
 	if (isOpened) {
 		return (
 			<PokedexArea>
