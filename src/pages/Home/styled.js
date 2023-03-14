@@ -134,6 +134,11 @@ export const PageArea = styled.div`
 
 			input {
 				width: 300px;
+				font-size: 10px;
+
+				&::placeholder {
+					font-size: 10px;
+				}
 			}
 		}
 	}
