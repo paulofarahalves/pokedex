@@ -6,6 +6,7 @@ import generations from '../../helpers/generations';
 import Pagination from '../../components/Pagination';
 import Footer from '../../components/Footer';
 import pokemonLogo from '../../assets/images/pokemon-logo.svg.png';
+import Pokedex from '../../components/Pokedex';
 
 function Page() {
 	const [currentGeneration, setCurrentGeneration] = useState(1);
@@ -13,6 +14,9 @@ function Page() {
 	const [pokemonList, setPokemonList] = useState([]);
 	const [searchInput, setSearchInput] = useState('');
 	const [pokemonFilter, setPokemonFilter] = useState([]);
+
+	const [openPokedex, setOpenPokedex] = useState(false);
+	const [currentPokemon, setCurrentPokemon] = useState('');
 
 	const [currentPage, setCurrentPage] = useState(1);
 	const [pokemonsPerPage] = useState(12);
@@ -42,8 +46,11 @@ function Page() {
 		setGenerationInfo(gen);
 		setCurrentPage(1);
 		setSearchInput('');
-		console.log(pokemonList);
 	};
+
+	for (let i = 0; i < pokemonList.length; i++) {
+		pokemonList[i].id = i + generationInfo.ni;
+	}
 
 	return (
 		<>
@@ -103,15 +110,24 @@ function Page() {
 
 					<div className="pokemonList">
 						{currentPokemons.map((i, k) => (
-							<Pokemon
+							<div
 								key={k}
-								data={i}
-								filter={searchInput}
-								generation={currentGeneration}
-							/>
+								onClick={() => {
+									setCurrentPokemon(i.id);
+									setOpenPokedex(true);
+								}}
+							>
+								<Pokemon
+									key={k}
+									data={i}
+									filter={searchInput}
+									generation={currentGeneration}
+								/>
+							</div>
 						))}
 					</div>
 				</div>
+
 				<Pagination
 					totalPokemons={pokemonFilter.length}
 					pokemonsPerPage={pokemonsPerPage}
@@ -119,6 +135,16 @@ function Page() {
 					currentPage={currentPage}
 				/>
 			</PageArea>
+			<Pokedex
+				isOpened={openPokedex}
+				setModalOpen={() => {
+					setOpenPokedex(!openPokedex);
+				}}
+				generation={currentGeneration}
+				currentPokemon={currentPokemon}
+				lastPokemonId={generationInfo.ni + generationInfo.qt - 1}
+				firstPokemonId={generationInfo.ni}
+			></Pokedex>
 			<Footer />
 		</>
 	);

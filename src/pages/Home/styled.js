@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import backgroundImg from '../../assets/images/background.png';
+import '../../fonts/Gameboy.ttf';
 
 export const PageArea = styled.div`
 	display: flex;
@@ -86,11 +87,12 @@ export const PageArea = styled.div`
 			padding: 0 20px;
 			width: 400px;
 			height: 60px;
-			font-size: 20px;
+			font-size: 13px;
 			border-radius: 30px;
 			background-color: #feffee;
 			border: 3px solid #395faa;
 			outline: none;
+			font-family: 'Gameboy';
 		}
 
 		.pokemonList {

@@ -2,8 +2,14 @@
 
 * {
 	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
 }
 
 body {
 	background-color: #feffee;
+}
+
+@font-face {
+	font-family: 'Gameboy';
+	src: local('Gameboy'), url('./fonts/Gameboy.ttf') format('truetype');
 }

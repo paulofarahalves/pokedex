@@ -10,7 +10,7 @@ export const PokemonItem = styled.div`
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 200px;
+		width: 230px;
 		border-radius: 10px;
 		padding: 40px 20px 20px 20px;
 		cursor: pointer;
