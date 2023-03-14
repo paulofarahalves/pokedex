@@ -62,8 +62,6 @@ export const PokedexArea = styled.div`
 			position: fixed;
 			width: 298px;
 			height: 218.8px;
-			//width: 34.6511%;
-			//height: 34.1875%;
 			border-radius: 5px;
 			left: 32%;
 			top: 7.2%;
@@ -79,7 +77,6 @@ export const PokedexArea = styled.div`
 				position: fixed;
 				left: 43%;
 				top: 20%;
-				//
 			}
 		}
 
@@ -122,8 +119,6 @@ export const PokedexArea = styled.div`
 		.pokemonInfo {
 			width: 298px;
 			height: 218.8px;
-			//width: 34.6511%;
-			//height: 34.1875%;
 			padding: 20px;
 			position: fixed;
 			left: 31.9%;
