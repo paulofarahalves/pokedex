@@ -220,7 +220,6 @@ export const PokedexArea = styled.div`
 				.pokemonImg {
 					width: 60px;
 					height: 60px;
-
 					left: 42%;
 					top: 16%;
 				}
