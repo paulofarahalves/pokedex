@@ -1,16 +1,16 @@
-Pokemon search using React and API
+# Pokemon search using React and API
 
-Installation:
+### Installation
 
-### `npm install`
+`npm install`
 
-In the project directory, you can run:
+### In the project directory, run:
 
-### `npm start`
+`npm start`
 
 This application uses an API from https://pokeapi.co/
 
-Usage:
+### Usage
 
 https://paulofarahalves.github.io/pokedex/
 
